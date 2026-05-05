@@ -10,7 +10,6 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         password: {},
       },
       authorize(credentials) {
-        // SIMPLE demo login (replace with DB later)
         if (
           credentials?.email === "admin@test.com" &&
           credentials?.password === "123456"
