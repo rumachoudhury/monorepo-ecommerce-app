@@ -8,6 +8,9 @@ const products = [
   { id: "1", title: "Nike Shoes", price: 150, image: "/shoe.avif" },
   { id: "2", title: "Apple Watch", price: 399, image: "/watch.avif" },
   { id: "3", title: "Headphones", price: 89, image: "/headphone.avif" },
+  { id: "4", title: "Parfum", price: 89, image: "/parfum.avif" },
+  { id: "5", title: "Sunglasses", price: 89, image: "/sunglass.avif" },
+  { id: "6", title: "Water Bottle", price: 89, image: "/water.avif" },
 ];
 
 export default function ProductPage() {
