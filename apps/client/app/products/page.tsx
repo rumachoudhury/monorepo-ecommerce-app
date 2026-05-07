@@ -19,6 +19,24 @@ export default function ProductsPage() {
           price={89}
           image="/headphone.avif"
         />
+        <ProductCard
+          id="3"
+          title="Headphones"
+          price={89}
+          image="/headphone.avif"
+        />
+        <ProductCard
+          id="3"
+          title="Headphones"
+          price={89}
+          image="/headphone.avif"
+        />
+        <ProductCard
+          id="3"
+          title="Headphones"
+          price={89}
+          image="/headphone.avif"
+        />
       </div>
     </main>
   );
