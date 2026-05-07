@@ -56,6 +56,112 @@ export default function Home() {
           />
         </div>
       </section>
+
+      {/* ⭐ FEATURES SECTION */}
+
+      <section className="bg-white py-16">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+          <div className="p-6 rounded-2xl shadow text-center border-b-2">
+            <h3 className="text-xl font-bold mb-3">🚚 Free Shipping</h3>
+            <p className="text-gray-600">
+              Fast and free delivery on all orders.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl shadow text-center border-b-2">
+            <h3 className="text-xl font-bold mb-3">🔒 Secure Payment</h3>
+            <p className="text-gray-600">Safe and trusted payment methods.</p>
+          </div>
+
+          <div className="p-6 rounded-2xl shadow text-center border-b-2">
+            <h3 className="text-xl font-bold mb-3">💎 Premium Quality</h3>
+            <p className="text-gray-600">
+              Carefully selected high-quality products.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CATEGORIES SECTION */}
+      <section className="py-20 bg-gray-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-10 text-center">
+            Shop By Category
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-10 rounded-2xl shadow text-center hover:shadow-xl transition">
+              <h3 className="text-2xl font-bold">👟 Fashion</h3>
+            </div>
+
+            <div className="bg-white p-10 rounded-2xl shadow text-center hover:shadow-xl transition">
+              <h3 className="text-2xl font-bold">⌚ Electronics</h3>
+            </div>
+
+            <div className="bg-white p-10 rounded-2xl shadow text-center hover:shadow-xl transition">
+              <h3 className="text-2xl font-bold">🎧 Accessories</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PROMO BANNER SECTION*/}
+      <section className="bg-cyan-700 text-white py-20 text-center">
+        <h2 className="text-4xl font-bold">Summer Sale 50% OFF 🔥</h2>
+
+        <p className="mt-4 text-lg">Limited-time deals on selected products.</p>
+
+        <button className="mt-8 bg-white text-cyan-700 px-8 py-3 rounded-full font-bold hover:scale-105 transition">
+          Shop Deals
+        </button>
+      </section>
+
+      {/* TESTIMONIALS SECTION */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            What Customers Say
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 shadow rounded-2xl">
+              <p>&quot;Amazing products and fast shipping!&quot;</p>
+              <h4 className="mt-4 font-bold">— Sarah</h4>
+            </div>
+
+            <div className="p-6 shadow rounded-2xl">
+              <p>&quot;Best ecommerce experience I&apos;ve had.&quot;</p>
+              <h4 className="mt-4 font-bold">— John</h4>
+            </div>
+
+            <div className="p-6 shadow rounded-2xl">
+              <p>&quot;Great quality and customer service.&quot;</p>
+              <h4 className="mt-4 font-bold">— Emma</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NEWSLETTER SECTION */}
+      <section className="py-20 bg-gray-900 text-white text-center">
+        <h2 className="text-4xl font-bold">Join Our Newsletter</h2>
+
+        <p className="mt-4 text-gray-300">
+          Get updates about new products and special offers.
+        </p>
+
+        <div className="mt-6 flex flex-col md:flex-row justify-center gap-2">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="px-15 py-3 rounded-full w-80"
+          />
+
+          <button className="bg-cyan-600 px-8 py-3 rounded-full hover:bg-cyan-500 transition">
+            Subscribe
+          </button>
+        </div>
+      </section>
     </main>
   );
 }
