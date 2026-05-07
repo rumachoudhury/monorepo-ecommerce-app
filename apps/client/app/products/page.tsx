@@ -19,23 +19,18 @@ export default function ProductsPage() {
           price={89}
           image="/headphone.avif"
         />
+        <ProductCard id="4" title="Parfum" price={89} image="/parfum.avif" />
         <ProductCard
-          id="3"
-          title="Headphones"
-          price={89}
-          image="/headphone.avif"
+          id="5"
+          title="Sunglasses"
+          price={20}
+          image="/sunglass.avif"
         />
         <ProductCard
-          id="3"
-          title="Headphones"
-          price={89}
-          image="/headphone.avif"
-        />
-        <ProductCard
-          id="3"
-          title="Headphones"
-          price={89}
-          image="/headphone.avif"
+          id="6"
+          title="Water Bottle"
+          price={30}
+          image="/water.avif"
         />
       </div>
     </main>
