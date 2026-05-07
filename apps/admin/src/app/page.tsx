@@ -1,17 +1,8 @@
-// export default function AdminHome() {
-//   return (
-//     <div style={{ padding: 40 }}>
-//       <h1>Admin Dashboard Root</h1>
-//     </div>
-//   );
-// }
-
-// -----------
 export default function AdminHome() {
   return (
     <main style={styles.container}>
       <div style={styles.card}>
-        <h1 style={styles.title}>Admin Dashboard Root 📊</h1>
+        <h1 style={styles.title}>Admin Dashboard Root</h1>
         <p style={styles.subtitle}>
           Welcome back! Manage your system from here.
         </p>
