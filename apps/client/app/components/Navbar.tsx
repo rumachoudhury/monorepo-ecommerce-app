@@ -39,7 +39,7 @@ export default function Navbar() {
 
       {/* CART */}
       <Link href="/cart" className="relative">
-        <ShoppingCart className="text-gray-50 text-center mr-8" />
+        <ShoppingCart className="text-gray-50 text-center" />
 
         {/* BADGE */}
         {totalItems > 0 && (
