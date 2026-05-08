@@ -37,7 +37,7 @@ importers:
         version: 19.2.4(react@19.2.4)
     devDependencies:
       '@tailwindcss/postcss':
-        specifier: ^4
+        specifier: ^4.2.4
         version: 4.2.4
       '@types/node':
         specifier: ^20
@@ -48,14 +48,20 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.2.2(@types/react@19.2.2)
+      autoprefixer:
+        specifier: ^10.5.0
+        version: 10.5.0(postcss@8.5.14)
       eslint:
         specifier: ^9
         version: 9.39.1(jiti@2.6.1)
       eslint-config-next:
         specifier: 16.2.4
         version: 16.2.4(@typescript-eslint/parser@8.50.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)
+      postcss:
+        specifier: ^8.5.14
+        version: 8.5.14
       tailwindcss:
-        specifier: ^4
+        specifier: ^4.2.4
         version: 4.2.4
       typescript:
         specifier: ^5
