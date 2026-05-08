@@ -133,7 +133,7 @@ function Sidebar() {
     <div className="w-6 bg-gray-800 fixed h-full">
       <div className="">
         {/* <h1 className="text-2xl">Admin DashBoard</h1> */}
-        <Link href="/dashboard" className="text-2x text-white">
+        <Link href="/dashboard" className="text-2x text-white underline">
           Go to Dashboard
         </Link>
       </div>
@@ -141,7 +141,7 @@ function Sidebar() {
       <ul>
         <li>
           <Link href="/" className="flex items-center gap-2">
-            <HomeIcon size={18} />
+            <HomeIcon size={18} className="inline-block w-6 h-6" />
             home
           </Link>
         </li>
