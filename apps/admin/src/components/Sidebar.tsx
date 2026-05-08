@@ -130,7 +130,7 @@ import { HomeIcon } from "lucide-react";
 
 function Sidebar() {
   return (
-    <div className="w-6 bg-gray-800 fixed h-full">
+    <div className="w-64 bg-gray-800 fixed h-full px-4 py-2">
       <div className="">
         {/* <h1 className="text-2xl">Admin DashBoard</h1> */}
         <Link href="/dashboard" className="text-2x text-white underline">

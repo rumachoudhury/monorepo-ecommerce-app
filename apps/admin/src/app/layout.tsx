@@ -7,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-arp="">
       <body className="min-h-screen  bg-[#0f172a] text-white">{children}</body>
     </html>
   );
