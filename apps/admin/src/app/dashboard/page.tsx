@@ -89,10 +89,8 @@
 // }
 
 // ------------------
-export default function DashBoard() {
-  return (
-    <div className="p-6">
-      <h1>Admin Dashboard</h1>
-    </div>
-  );
+import DashBoard from "@/components/Dashboard";
+
+export default function Page() {
+  return <DashBoard />;
 }

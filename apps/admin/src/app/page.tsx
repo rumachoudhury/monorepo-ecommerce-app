@@ -1,9 +1,9 @@
 import Sidebar from "@/components/Sidebar";
-import DashBoard from "./dashboard/page";
+import DashBoard from "@/components/Dashboard";
 
 export default function AdminHome() {
   return (
-    <div className="flex  bg-amber-300">
+    <div className="flex">
       <Sidebar />
 
       <DashBoard />
