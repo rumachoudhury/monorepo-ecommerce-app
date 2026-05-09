@@ -1,7 +1,14 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { HomeIcon } from "lucide-react";
+
+import {
+  LayoutDashboard,
+  ShoppingCart,
+  Users,
+  Settings,
+  BarChart3,
+} from "lucide-react";
 
 function Sidebar() {
   return (
@@ -12,7 +19,7 @@ function Sidebar() {
         </Link>
       </div>
 
-      <ul className="list-none">
+      {/* <ul className="list-none">
         <li>
           <Link href="/" className="flex items-center gap-2 no-underline">
             <HomeIcon size={18} className="inline-block w-6 h-6" />
@@ -45,6 +52,57 @@ function Sidebar() {
           <Link href="/" className="flex items-center gap-2 no-underline">
             <HomeIcon size={18} className="inline-block w-6 h-6" />
             home
+          </Link>
+        </li>
+      </ul> */}
+      <ul className="list-none space-y-4">
+        <li>
+          <Link
+            href="/dashboard"
+            className="flex items-center gap-2 no-underline text-white"
+          >
+            <LayoutDashboard size={18} />
+            Dashboard
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            href="/orders"
+            className="flex items-center gap-2 no-underline text-white"
+          >
+            <ShoppingCart size={18} />
+            Orders
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            href="/customers"
+            className="flex items-center gap-2 no-underline text-white"
+          >
+            <Users size={18} />
+            Customers
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            href="/analytics"
+            className="flex items-center gap-2 no-underline text-white"
+          >
+            <BarChart3 size={18} />
+            Analytics
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            href="/settings"
+            className="flex items-center gap-2 no-underline text-white"
+          >
+            <Settings size={18} />
+            Settings
           </Link>
         </li>
       </ul>
