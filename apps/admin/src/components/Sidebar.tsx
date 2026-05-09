@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 import {
-  LayoutDashboard,
+  // LayoutDashboard,
   ShoppingCart,
   Users,
   Settings,
@@ -19,44 +19,8 @@ function Sidebar() {
         </Link>
       </div>
 
-      {/* <ul className="list-none">
-        <li>
-          <Link href="/" className="flex items-center gap-2 no-underline">
-            <HomeIcon size={18} className="inline-block w-6 h-6" />
-            home
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/" className="flex items-center gap-2 no-underline">
-            <HomeIcon size={18} className="inline-block w-6 h-6" />
-            home
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/" className="flex items-center gap-2 no-underline">
-            <HomeIcon size={18} className="inline-block w-6 h-6" />
-            home
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/" className="flex items-center gap-2 no-underline">
-            <HomeIcon size={18} className="inline-block w-6 h-6" />
-            home
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/" className="flex items-center gap-2 no-underline">
-            <HomeIcon size={18} className="inline-block w-6 h-6" />
-            home
-          </Link>
-        </li>
-      </ul> */}
       <ul className="list-none space-y-4">
-        <li>
+        {/* <li>
           <Link
             href="/dashboard"
             className="flex items-center gap-2 no-underline text-white"
@@ -64,7 +28,7 @@ function Sidebar() {
             <LayoutDashboard size={18} />
             Dashboard
           </Link>
-        </li>
+        </li> */}
 
         <li>
           <Link
