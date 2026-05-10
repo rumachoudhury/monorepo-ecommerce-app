@@ -1,4 +1,5 @@
 import "./globals.css";
+import Providers from "./providers";
 
 export default function RootLayout({
   children,
@@ -7,12 +8,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-arp="">
-      <body className="" cz-shortcut-listen="true">{children}</body>
+      <body className="" cz-shortcut-listen="true">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
-
-
 
 // import "./globals.css";
 
