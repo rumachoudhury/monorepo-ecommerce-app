@@ -1,26 +1,31 @@
-import NextAuth from "next-auth";
-import Credentials from "next-auth/providers/credentials";
+import { NextAuthOptions } from "next-auth";
+import CredentialsProvider from "next-auth/providers/credentials";
 
-export const { handlers, auth, signIn, signOut } = NextAuth({
+export const authOptions: NextAuthOptions = {
   providers: [
-    Credentials({
-      name: "Admin Login",
+    CredentialsProvider({
+      name: "Credentials",
       credentials: {
         email: {},
         password: {},
       },
-      authorize(credentials) {
+      async authorize(credentials) {
         if (
           credentials?.email === "admin@test.com" &&
           credentials?.password === "123456"
         ) {
-          return { id: "1", name: "Admin" };
+          return { id: "1", name: "Admin", email: "admin@test.com" };
         }
         return null;
       },
     }),
   ],
+
+  session: {
+    strategy: "jwt",
+  },
+
   pages: {
     signIn: "/login",
   },
-});
+};

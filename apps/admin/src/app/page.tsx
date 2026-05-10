@@ -108,12 +108,6 @@ export default function AdminHome() {
             🚪 Login
           </Link>
 
-          {/* <Link
-            href="/logout"
-            className="px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition-colors"
-          >
-            🚪 Logout
-          </Link> */}
           <button
             onClick={() => signOut({ callbackUrl: "/login" })}
             className="w-full text-left px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition-colors"
@@ -234,3 +228,5 @@ export default function AdminHome() {
     </div>
   );
 }
+
+// { callbackUrl: "/login" }
