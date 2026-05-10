@@ -7,10 +7,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-arp="">
-      <body className="">{children}</body>
+      <body className="" cz-shortcut-listen="true">{children}</body>
     </html>
   );
 }
+
+
 
 // import "./globals.css";
 
