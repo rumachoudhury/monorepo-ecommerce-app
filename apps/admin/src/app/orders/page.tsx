@@ -39,6 +39,95 @@ export default function OrdersPage() {
       </div>
 
       {/* Orders Table  */}
+      <div className="bg-white rounded-2xl shadow p-6">
+        {/* Table header */}
+        <div className="flex items-center justify-between p-6 border-b">
+          <h1 className="text-xl font-bold text-gray-800">Recent Orders</h1>
+          <input
+            type="text"
+            placeholder="Search Orders"
+            className="border border-gray-300 rounded-lg px-4 py-2 outline-none focus:ring-2 focus:ring-purple-600"
+          />
+        </div>
+
+        {/* table */}
+        <div>
+          <table>
+            <thead>
+              <tr className="border-b text-gray-500">
+                <th className="py-3 text-left">Order ID</th>
+                <th className="text-left">Customer</th>
+                <th className="text-left">Product</th>
+                <th className="text-left">Status</th>
+                <th className="text-left">Amount</th>
+                <th className="text-left">Date</th>
+              </tr>
+            </thead>
+
+            <tbody className="text-gray-700">
+              {/* 1 */}
+              <tr className="border-b hover:bg-gray-50 transition">
+                <td className="py-4">#1024</td>
+                <td>John Doe</td>
+                <td>Wirless Headphones</td>
+
+                <td>
+                  <span className="bg-green-100 text-gray-700 px-3 py-y rounded-b-full text-xs">
+                    Delivered
+                  </span>
+                </td>
+                <td className="">$120</td>
+                <td className="">May 10, 2026</td>
+              </tr>
+              {/* 2 */}
+              <tr className="border-b hover:bg-gray-50 transition">
+                <td className="py-4">#1025</td>
+                <td>Jasmin Ara</td>
+                <td>Gaming Mouse</td>
+
+                <td>
+                  <span className="bg-yellow-100 text-yellow-700 px-3 py-y rounded-b-full text-xs">
+                    pending
+                  </span>
+                </td>
+                <td className="">$75</td>
+                <td className="">May 9, 2026</td>
+              </tr>
+              {/* 3 */}
+              <tr className="border-b hover:bg-gray-50 transition">
+                <td className="py-4">#1026</td>
+                <td>Michael Lee</td>
+                <td>Mechanical Keyboard</td>
+
+                <td>
+                  <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs">
+                    Shipped
+                  </span>
+                </td>
+
+                <td>$210</td>
+                <td>May 8, 2026</td>
+              </tr>
+
+              {/* 4 */}
+              <tr className="hover:bg-gray-50 transition">
+                <td className="py-4">#1027</td>
+                <td>Emily Johnson</td>
+                <td>Smart Watch</td>
+
+                <td>
+                  <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs">
+                    Cancelled
+                  </span>
+                </td>
+
+                <td>$180</td>
+                <td>May 7, 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </main>
   );
 }
