@@ -1,68 +1,66 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-
-import {
-  // LayoutDashboard,
-  ShoppingCart,
-  Users,
-  Settings,
-  BarChart3,
-} from "lucide-react";
+import { signOut } from "next-auth/react";
 
 function Sidebar() {
   return (
-    <aside>
-      <div className="w-64 fixed left-0 top-0 h-screen bg-amber-600 p-6 border-r shadow-md">
-        <div className="text-3xl font-semibold">
-          <Link href="/dashboard" className=" text-white no-underline  block">
-            Go to Dashboard
+    <div>
+      <aside className="w-72 min-h-screen bg-gray-900 text-white p-6">
+        <h2 className="text-2xl font-bold text-purple-400 mb-8">Admin Panel</h2>
+
+        <nav className="flex flex-col gap-3 text-sm font-medium">
+          <Link
+            href="/dashboard"
+            className="bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+          >
+            🏠 Dashboard
           </Link>
-        </div>
 
-        <ul className="list-none space-y-4">
-          <li>
-            <Link
-              href="/orders"
-              className="flex items-center gap-2 no-underline text-white"
-            >
-              <ShoppingCart size={18} />
-              Orders
-            </Link>
-          </li>
+          <Link
+            href="/orders"
+            className="px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+          >
+            📦 Orders
+          </Link>
 
-          <li>
-            <Link
-              href="/customers"
-              className="flex items-center gap-2 no-underline text-white"
-            >
-              <Users size={18} />
-              Customers
-            </Link>
-          </li>
+          <Link
+            href="/users"
+            className="px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+          >
+            👥 Users
+          </Link>
 
-          <li>
-            <Link
-              href="/analytics"
-              className="flex items-center gap-2 no-underline text-white"
-            >
-              <BarChart3 size={18} />
-              Analytics
-            </Link>
-          </li>
+          <Link
+            href="/products"
+            className="px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+          >
+            🛍️ Products
+          </Link>
 
-          <li>
-            <Link
-              href="/settings"
-              className="flex items-center gap-2 no-underline text-white"
-            >
-              <Settings size={18} />
-              Settings
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </aside>
+          <Link
+            href="/settings"
+            className="px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+          >
+            ⚙️ Settings
+          </Link>
+
+          <Link
+            href="/login"
+            className="px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+          >
+            🚪 Login
+          </Link>
+
+          <button
+            onClick={() => signOut({ callbackUrl: "/login" })}
+            className="w-full text-left px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition-colors"
+          >
+            🚪 Logout
+          </button>
+        </nav>
+      </aside>
+    </div>
   );
 }
 

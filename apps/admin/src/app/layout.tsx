@@ -1,5 +1,6 @@
 import "./globals.css";
 import Providers from "./providers";
+import Sidebar from "../components/Sidebar";
 
 export default function RootLayout({
   children,
@@ -9,7 +10,19 @@ export default function RootLayout({
   return (
     <html lang="en" data-arp="">
       <body className="" cz-shortcut-listen="true">
-        <Providers>{children}</Providers>
+        {/* <Providers>
+          {children}
+        </Providers> */}
+
+        <Providers>
+          <div className="flex min-h-screen">
+            {/* Sidebar LEFT */}
+            <Sidebar />
+
+            {/* Main Content RIGHT */}
+            <main className="flex-1 bg-gray-100">{children}</main>
+          </div>
+        </Providers>
       </body>
     </html>
   );

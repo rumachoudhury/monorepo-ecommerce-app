@@ -1,68 +1,13 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
-import { signOut } from "next-auth/react";
-
+// import Link from "next/link";
+import DashboardPage from "./dashboard/page";
 export default function AdminHome() {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
       {/* <aside className="w-72 bg-gray-900 text-white p-6">
-        <h2 className="text-2xl font-bold text-purple-400 mb-8">Admin Panel</h2>
-
-        <nav className="flex flex-col gap-3 text-sm font-medium">
-          <Link
-            href="/dashboard"
-            className="bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700"
-          >
-            🏠 Dashboard
-          </Link>
-
-          <Link
-            href="/orders"
-            className="px-4 py-2 rounded-lg hover:bg-gray-800"
-          >
-            📦 Orders
-          </Link>
-
-          <Link
-            href="/users"
-            className="px-4 py-2 rounded-lg hover:bg-gray-800"
-          >
-            👥 Users
-          </Link>
-
-          <Link
-            href="/products"
-            className="px-4 py-2 rounded-lg hover:bg-gray-800"
-          >
-            🛍️ Products
-          </Link>
-
-          <Link
-            href="/settings"
-            className="px-4 py-2 rounded-lg hover:bg-gray-800"
-          >
-            ⚙️ Settings
-          </Link>
-
-          <Link
-            href="/login"
-            className="px-4 py-2 rounded-lg hover:bg-gray-800"
-          >
-            🚪 Login
-          </Link>
-
-          <Link
-            href="/logout"
-            className="px-4 py-2 rounded-lg hover:bg-gray-800"
-          >
-            🚪 Logout
-          </Link>
-        </nav>
-      </aside> */}
-      <aside className="w-72 bg-gray-900 text-white p-6">
         <h2 className="text-2xl font-bold text-purple-400 mb-8">Admin Panel</h2>
 
         <nav className="flex flex-col gap-3 text-sm font-medium">
@@ -115,11 +60,12 @@ export default function AdminHome() {
             🚪 Logout
           </button>
         </nav>
-      </aside>
+      </aside> */}
 
+      {/* DashboardPage */}
       {/* Main Content */}
-      <main className="flex-1 p-8">
-        {/* Header */}
+      {/* <main className="flex-1 p-8">
+        
         <div className="flex items-center justify-between mb-8">
           <div>
             <h1 className="text-3xl font-bold text-gray-800">
@@ -135,7 +81,7 @@ export default function AdminHome() {
           </button>
         </div>
 
-        {/* Cards */}
+  
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center">
             <p className="text-gray-500">Total Orders</p>
@@ -162,7 +108,7 @@ export default function AdminHome() {
           </div>
         </div>
 
-        {/* Table */}
+       
         <div className="bg-white rounded-2xl shadow mt-10 p-6">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-bold">Recent Orders</h2>
@@ -224,9 +170,8 @@ export default function AdminHome() {
             </table>
           </div>
         </div>
-      </main>
+      </main> */}
+      <DashboardPage />
     </div>
   );
 }
-
-// { callbackUrl: "/login" }
