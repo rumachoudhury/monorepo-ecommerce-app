@@ -64,9 +64,9 @@ export default function OrdersPage() {
               </tr>
             </thead>
 
-            <tbody className="text-gray-700">
+            <tbody className="text-gray-600">
               {/* 1 */}
-              <tr className="border-b hover:bg-gray-50 transition">
+              <tr className="border-b hover:bg-gray-100 transition">
                 <td className="py-4">#1024</td>
                 <td>John Doe</td>
                 <td>Wirless Headphones</td>
