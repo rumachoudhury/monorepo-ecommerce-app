@@ -12,6 +12,7 @@ function Sidebar() {
         <nav className="flex flex-col gap-3 text-sm font-medium">
           <Link
             href="/dashboard"
+            // href="/"
             className="bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
           >
             🏠 Dashboard
