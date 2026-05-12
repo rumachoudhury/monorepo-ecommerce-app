@@ -1,6 +1,7 @@
+"use client";
 export default function AnimatedHUDLogin() {
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-[#0c0c0c] text-white">
+    <div className="relative w-full overflow-hidden bg-[#0c0c0c] text-white">
       {/* Background Hex Grid */}
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.08)_1px,_transparent_1px)] bg-[length:30px_30px]" />
 
