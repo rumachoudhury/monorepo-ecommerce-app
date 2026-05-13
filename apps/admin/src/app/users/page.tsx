@@ -254,7 +254,13 @@ function UsersPage() {
           <div className="bg-white rounded-xl shadow p-6 transition hover:shadow-xl hover:translate-1">
             <p className="text-gray-500">Total Users</p>
             <h2 className="text-3xl font-bold mt-2">1,248</h2>
-            <p className="">+12% this month</p>
+            <p className="text-gray-600 text-sm mt-2">+12% this month</p>
+          </div>
+
+          <div className="bg-white rounded-xl shadow p-6 transition hover:shadow-xl hover:translate-1">
+            <p className="text-gray-500">Active Users</p>
+            <h2 className="text-3xl font-bold mt-2 text-gray-600">1,120</h2>
+            <p className="text-gray-500">Currently active</p>
           </div>
         </div>
       </main>
