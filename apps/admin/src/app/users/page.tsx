@@ -235,7 +235,20 @@ function UsersPage() {
       </div>
 
       {/* Main content */}
-      <main></main>
+      <main className="relative z-10 p-10">
+        {/* Header Section */}
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <h1 className="text-3xl font-bold">Users</h1>
+
+            <p className="text-gray-500 mt-2">
+              Mannage all registered users and permissions
+            </p>
+          </div>
+
+          <button> + Add User</button>
+        </div>
+      </main>
     </div>
   );
 }
