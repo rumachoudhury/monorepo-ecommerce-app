@@ -1,5 +1,6 @@
 "use client";
-export default function AnimatedHUDLogin() {
+
+export default function AnimatedHUD() {
   return (
     <div className="relative w-full overflow-hidden bg-[#0c0c0c] text-white">
       {/* Background Hex Grid */}
