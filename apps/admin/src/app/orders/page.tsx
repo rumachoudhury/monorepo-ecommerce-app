@@ -1,8 +1,18 @@
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
+
 export default function OrdersPage() {
   return (
     <main className="p-8 bg-gray-100 min-h-screen">
       {/* header */}
       <div className="flex items-center justify-between mb-8">
+        <Link
+          href="/"
+          className=" text-green-600 text-2xl flex items-center gap-2"
+        >
+          <ArrowLeft />
+          Go to admin home
+        </Link>
         <div>
           <h1 className="text-3xl font-boldtext-gray-800">Orders</h1>
           <p className="text-gray-500 mt-1">
@@ -15,7 +25,7 @@ export default function OrdersPage() {
         </button>
       </div>
 
-      {/* Orders starts here */}
+      {/* Orders card starts here */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-10">
         <div className="bg-white p-6 rounded-2xl shadow">
           <p className="text-gray-500">Total Orders</p>
@@ -41,7 +51,7 @@ export default function OrdersPage() {
       {/* Orders Table  */}
       <div className="bg-white rounded-2xl shadow p-6">
         {/* Table header */}
-        <div className="flex items-center justify-between p-6 border-b">
+        <div className="flex items-center justify-between border-b">
           <h1 className="text-xl font-bold text-gray-800">Recent Orders</h1>
           <input
             type="text"
@@ -51,8 +61,8 @@ export default function OrdersPage() {
         </div>
 
         {/* table */}
-        <div>
-          <table>
+        <div className="overflow-x-auto">
+          <table className="w-full">
             <thead>
               <tr className="border-b text-gray-500">
                 <th className="py-3 text-left">Order ID</th>

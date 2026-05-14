@@ -69,6 +69,9 @@ importers:
 
   apps/client:
     dependencies:
+      '@stripe/stripe-js':
+        specifier: ^9.5.0
+        version: 9.5.0
       lucide-react:
         specifier: ^1.14.0
         version: 1.14.0(react@19.2.4)
@@ -684,6 +687,10 @@ packages:
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
+
+  '@stripe/stripe-js@9.5.0':
+    resolution: {integrity: sha512-dTQWkJRw5lhcQipPuw6qZRBK2zY5eWWZ1Srw9mSjhIXSLdsNYO3uaIV+YRMkI0/tB/D7yQdHYStrcZrbeHI5Jg==}
+    engines: {node: '>=12.16'}
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -2754,6 +2761,8 @@ snapshots:
   '@panva/hkdf@1.2.1': {}
 
   '@rtsao/scc@1.1.0': {}
+
+  '@stripe/stripe-js@9.5.0': {}
 
   '@swc/helpers@0.5.15':
     dependencies:

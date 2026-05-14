@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-// import Link from "next/link";
 import DashboardPage from "./dashboard/page";
 import Sidebar from "@/components/Sidebar";
 
@@ -12,8 +9,9 @@ export default function AdminHome() {
       <Sidebar />
 
       {/* Main Content */}
-
-      <DashboardPage />
+      <div className="flex-1 p-6">
+        <DashboardPage />
+      </div>
     </div>
   );
 }

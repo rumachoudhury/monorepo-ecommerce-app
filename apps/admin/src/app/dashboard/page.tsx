@@ -1,10 +1,34 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 function DashboardPage() {
+  const pathname = usePathname();
   return (
     <div>
       <main className="flex-1 p-8">
+        {/* <Link
+          href="/"
+          className="text-green-600 text-2xl flex items-center gap-2 mb-4"
+        >
+          <ArrowLeft />
+          Go to admin home
+        </Link> */}
+
+        {/* show link ONLY when NOT on admin home */}
+        {pathname !== "/" && (
+          <Link
+            href="/"
+            className="text-green-600 text-2xl flex items-center gap-2 mb-4"
+          >
+            <ArrowLeft />
+            Go to admin home
+          </Link>
+        )}
+
         <div className="flex items-center justify-between mb-8">
           <div>
             <h1 className="text-3xl font-bold text-gray-800">

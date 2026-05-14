@@ -1,6 +1,16 @@
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
+
 export default function SettingsPage() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gray-100">
+      <Link
+        href="/"
+        className="m-8 text-green-600 text-2xl flex items-center gap-2"
+      >
+        <ArrowLeft />
+        Go to admin home
+      </Link>
       {/* 🔥 Animated Background Glow */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-purple-300/30 blur-3xl animate-pulse" />
