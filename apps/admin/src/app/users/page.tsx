@@ -288,6 +288,19 @@ function UsersPage() {
               <p className="text-red-500">Restricted accounts</p>
             </div>
           </div>
+
+          {/* Users Table */}
+          <div className="bg-white rounded-2xl shadow p-6 transition hover:shadow-xl">
+            {/* Teable Header */}
+            <div className="flex items-center justify-between mb-6">
+              <h1 className="text-xl font-bold text-gray-800">User List</h1>
+              <input
+                type="text"
+                placeholder="Search users..."
+                className="border border-gray-300 rounded-lg px-4 py-2 outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
+          </div>
         </main>
       </div>
     </div>
