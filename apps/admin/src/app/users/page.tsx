@@ -261,16 +261,24 @@ function UsersPage() {
 
           {/* User Stats */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-10">
+            {/* Total User */}
             <div className="bg-white rounded-xl shadow p-6 transition hover:shadow-xl hover:-translate-y-1">
               <p className="text-gray-500">Total Users</p>
               <h2 className="text-3xl font-bold mt-2">1,248</h2>
               <p className="text-green-600 text-sm mt-2">+12% this month</p>
             </div>
 
+            {/* Active Users */}
             <div className="bg-white rounded-xl shadow p-6 transition hover:shadow-xl hover:-translate-y-1">
               <p className="text-gray-500">Active Users</p>
               <h2 className="text-3xl font-bold mt-2 text-gray-600">1,120</h2>
               <p className="text-green-500">Currently active</p>
+            </div>
+            {/* Admins */}
+            <div className="bg-white rounded-xl shadow p-6 transition hover:shadow-xl hover:-translate-y-1">
+              <p className="text-gray-500">Admins</p>
+              <h2 className="text-3xl font-bold mt-2 text-purple-600">1,120</h2>
+              <p className="text-gray-500"> System administrators</p>
             </div>
           </div>
         </main>
