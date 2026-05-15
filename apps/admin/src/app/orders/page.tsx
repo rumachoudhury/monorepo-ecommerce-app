@@ -8,7 +8,7 @@ export default function OrdersPage() {
       <div className="flex items-center justify-between mb-8">
         <Link
           href="/"
-          className=" text-green-600 text-2xl flex items-center gap-2"
+          className=" text-green-500 text-2xl flex items-center gap-2"
         >
           <ArrowLeft />
           Go to admin home
