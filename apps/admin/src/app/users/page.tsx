@@ -274,11 +274,18 @@ function UsersPage() {
               <h2 className="text-3xl font-bold mt-2 text-gray-600">1,120</h2>
               <p className="text-green-500">Currently active</p>
             </div>
-            {/* Admins */}
+            {/*System administrators */}
             <div className="bg-white rounded-xl shadow p-6 transition hover:shadow-xl hover:-translate-y-1">
               <p className="text-gray-500">Admins</p>
-              <h2 className="text-3xl font-bold mt-2 text-purple-600">1,120</h2>
-              <p className="text-gray-500"> System administrators</p>
+              <h2 className="text-3xl font-bold mt-2 text-purple-600">12</h2>
+              <p className="text-gray-500">System administrators</p>
+            </div>
+
+            {/*Restricted accounts  */}
+            <div className="bg-white rounded-xl shadow p-6 transition hover:shadow-xl hover:-translate-y-1">
+              <p className="text-gray-500">Blocked Users</p>
+              <h2 className="text-3xl font-bold mt-2 text-purple-600">18</h2>
+              <p className="text-red-500">Restricted accounts</p>
             </div>
           </div>
         </main>
