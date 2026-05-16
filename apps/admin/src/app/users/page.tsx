@@ -315,6 +315,34 @@ function UsersPage() {
                     <th className="text-left">Actions</th>
                   </tr>
                 </thead>
+
+                {/* Table Body */}
+                <tbody className="text-gray-700">
+                  <tr className="border-b transition hover:bg-gray-50">
+                    <td className="py-4 font-medium">John Doe</td>
+                    <td>john@example.com</td>
+                    <td>
+                      <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs">
+                        Admin
+                      </span>
+                    </td>
+                    <td>
+                      <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs">
+                        Active
+                      </span>
+                    </td>
+                    <td>May 12, 2026</td>
+                    <td>
+                      <button className="text-blue-600 hover:underline mr-3">
+                        Edit
+                      </button>
+
+                      <button className="text-red-500 hover:underline">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
