@@ -300,6 +300,23 @@ function UsersPage() {
                 className="border border-gray-300 rounded-lg px-4 py-2 outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
+
+            {/* Table */}
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                {/* Table Head */}
+                <thead>
+                  <tr className="border-b text-gray-500">
+                    <th className="py-3 text-left">Name</th>
+                    <th className="text-left">Email</th>
+                    <th className="text-left">Role</th>
+                    <th className="text-left">Status</th>
+                    <th className="text-left">Joined</th>
+                    <th className="text-left">Actions</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
           </div>
         </main>
       </div>
