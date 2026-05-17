@@ -12,15 +12,15 @@ export default function Navbar() {
     setSearch(""); //clear input
   };
   return (
-    <div className="w-full h-20 bg-gray-900 text-white flex items-center justify-center">
+    <div className="w-full h-20 bg-gray-900 text-white flex items-center justify-between mx-auto p-4">
       {/* LOGO */}
       <div className="flex items-center gap-2">
         <Image
-          src="/woliul-hasan-BfPkm4ptlsI-unsplash.jpg"
+          src="/growtika-mlpsHpUUCHY-unsplash.jpg"
           alt="Logo"
-          width={40}
-          height={40}
-          className="rounded-full object-cover"
+          width={90}
+          height={60}
+          className="object-cover rounded-b-full rounded-e-full "
         />
       </div>
       <div className="flex items-center w-96 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2">
