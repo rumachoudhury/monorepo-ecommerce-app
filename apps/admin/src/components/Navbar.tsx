@@ -1,6 +1,7 @@
 "use client";
 
 import { SearchIcon } from "lucide-react";
+import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -13,6 +14,16 @@ export default function Navbar() {
   return (
     <div className="w-full h-20 bg-gray-900 text-white flex items-center justify-center">
       <div className="flex items-center w-96 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2">
+        {/* LOGO */}
+        <div className="flex items-center gap-2">
+          <Image
+            src="/woliul-hasan-BfPkm4ptlsI-unsplash.jpg"
+            alt="Logo"
+            width={40}
+            height={40}
+            className="rounded-full object-cover"
+          />
+        </div>
         <SearchIcon
           onClick={handleSearch}
           className="text-gray-400 w-4 h-4 mr-2"
@@ -33,32 +44,3 @@ export default function Navbar() {
     </div>
   );
 }
-
-// import { Image } from "lucide-react";
-// import React from "react";
-
-// function Navbar() {
-//   return (
-//     <div>
-//       {/* LOGO */}
-//       <div className="flex items-center gap-2">
-//         <Image
-//           src="/woliul-hasan-BfPkm4ptlsI-unsplash.jpg"
-//           alt="Logo"
-//           width={40}
-//           height={40}
-//           className="rounded-full object-cover"
-//         />
-//       </div>
-//       <input
-//         type="text"
-//         placeholder="Search..."
-//         className="border border-gray-500 text-white bg-gray-900"
-//       />
-
-//       <div></div>
-//     </div>
-//   );
-// }
-
-// export default Navbar;
