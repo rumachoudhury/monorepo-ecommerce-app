@@ -1,11 +1,10 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { signOut } from "next-auth/react";
 
 function Sidebar() {
   return (
-    <div>
+    <div className="flex flex-col">
       <aside className="w-72 min-h-screen bg-gray-900 text-white p-6">
         <h2 className="text-2xl font-bold text-purple-400 mb-8">Admin Panel</h2>
 
@@ -52,8 +51,22 @@ function Sidebar() {
             🚪 Login
           </Link>
 
-          <button
+          {/* <button
             onClick={() => signOut({ callbackUrl: "/login" })}
+            className="w-full text-left px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition-colors"
+          >
+            🚪 Logout
+          </button> */}
+
+          <button
+            onClick={() => {
+              // Clear any stored authentication data
+              localStorage.removeItem("authToken");
+              sessionStorage.clear(); // if used, clear session data
+
+              // Redirect to login page
+              window.location.href = "/login"; // adjust route as needed
+            }}
             className="w-full text-left px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition-colors"
           >
             🚪 Logout
