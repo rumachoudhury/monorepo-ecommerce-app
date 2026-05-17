@@ -1,4 +1,4 @@
-// import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Providers from "./providers";
 // import Sidebar from "../components/Sidebar";
@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-arp="">
       <body className="" cz-shortcut-listen="true">
-        {/* <Navbar /> */}
+        <Navbar />
         <Providers>
           <div className="flex min-h-screen">
             {/* Main Content RIGHT */}
