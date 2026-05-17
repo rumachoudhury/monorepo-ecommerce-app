@@ -1,8 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Providers from "./providers";
-// import Sidebar from "../components/Sidebar";
-// import AnimatedHUDLogin from "@/components/AnimatedHUDLogin";
 
 export default function RootLayout({
   children,

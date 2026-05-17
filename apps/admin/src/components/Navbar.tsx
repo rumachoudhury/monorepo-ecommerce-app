@@ -13,17 +13,17 @@ export default function Navbar() {
   };
   return (
     <div className="w-full h-20 bg-gray-900 text-white flex items-center justify-center">
+      {/* LOGO */}
+      <div className="flex items-center gap-2">
+        <Image
+          src="/woliul-hasan-BfPkm4ptlsI-unsplash.jpg"
+          alt="Logo"
+          width={40}
+          height={40}
+          className="rounded-full object-cover"
+        />
+      </div>
       <div className="flex items-center w-96 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2">
-        {/* LOGO */}
-        <div className="flex items-center gap-2">
-          <Image
-            src="/woliul-hasan-BfPkm4ptlsI-unsplash.jpg"
-            alt="Logo"
-            width={40}
-            height={40}
-            className="rounded-full object-cover"
-          />
-        </div>
         <SearchIcon
           onClick={handleSearch}
           className="text-gray-400 w-4 h-4 mr-2"
