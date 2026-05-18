@@ -26,7 +26,7 @@ export default function ProductPage() {
   return (
     <div className="max-w-6xl mx-auto p-10 grid md:grid-cols-2 gap-10 items-start">
       {/* IMAGE */}
-      <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow">
+      <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow">
         <Image
           src={product.image}
           alt={product.title}
