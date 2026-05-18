@@ -11,14 +11,6 @@ function DashboardPage() {
   return (
     <div>
       <main className="flex-1 p-8">
-        {/* <Link
-          href="/"
-          className="text-green-600 text-2xl flex items-center gap-2 mb-4"
-        >
-          <ArrowLeft />
-          Go to admin home
-        </Link> */}
-
         {/* show link ONLY when NOT on admin home */}
         {pathname !== "/" && (
           <Link
