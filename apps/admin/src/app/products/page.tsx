@@ -16,7 +16,7 @@ export default function ProductsPage() {
         <div>
           <h1 className="text-3xl font-bold text-gray-800">Products</h1>
 
-          <p className="text-gray-500 mt-2">Manage all store products</p>
+          <p className="text-gray-500 mt-2">Manage your all store products</p>
         </div>
 
         <button className="bg-purple-600 hover:bg-purple-700 text-white px-5 py-3 rounded-xl transition-colors">
