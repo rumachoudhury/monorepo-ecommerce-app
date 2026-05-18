@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* HERO SECTION */}
-      <section className="text-center py-20 px-6 bg-gradient-to-r from-cyan-700 to-cyan-500 text-white">
+      <section className="text-center py-20 px-6 bg-linear-to-r from-cyan-700 to-cyan-500 text-white">
         <div className="flex justify-center mb-6">
           <ShoppingBagIcon size={60} />
         </div>
@@ -107,7 +107,7 @@ export default function Home() {
 
       {/* PROMO BANNER SECTION*/}
       <section className="bg-cyan-700 text-white py-20 text-center">
-        <h2 className="text-4xl font-bold">Summer Sale 50% OFF 🔥</h2>
+        <h2 className="text-4xl font-bold">Summer Sale 50% OFF</h2>
 
         <p className="mt-4 text-lg">Limited-time deals on selected products.</p>
 

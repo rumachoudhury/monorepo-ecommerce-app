@@ -20,7 +20,7 @@ export default function ProductPage() {
   const product = products.find((p) => p.id === String(id));
 
   if (!product) {
-    return <p className="p-10">Product not found ❌</p>;
+    return <p className="p-10">Product not found</p>;
   }
 
   return (
@@ -47,7 +47,7 @@ export default function ProductPage() {
 
         <button
           onClick={() => addToCart(product)}
-          className="bg-cyan-800 text-white px-8 py-4 rounded-xl hover:bg-cyan-700 transition"
+          className="bg-cyan-900 text-white px-8 py-4 rounded-xl hover:bg-cyan-700 transition"
         >
           Add to Cart 🛒
         </button>
