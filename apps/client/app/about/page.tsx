@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function About() {
@@ -21,9 +22,12 @@ export default function About() {
           elegant design, and fast service for customers everywhere.
         </p>
 
-        <button className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+        <Link
+          href="/products"
+          className="inline-block bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+        >
           Explore Products
-        </button>
+        </Link>
       </div>
     </div>
   );
