@@ -11,7 +11,9 @@ export default function SuccessPage() {
         <div>
           <CheckCircle className="w-16 h-16" />
         </div>
-        <h1></h1>
+        <h1 className="text-2xl font-bold text-gray-800 mb-2">
+          Order Successful
+        </h1>
         <p></p>
         <Link href="/"></Link>
       </div>
