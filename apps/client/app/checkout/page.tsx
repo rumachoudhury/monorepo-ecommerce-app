@@ -2,8 +2,11 @@
 
 import { useState } from "react";
 import { useCartStore } from "@/app/store/cartStore";
+import { useRouter } from "next/navigation";
 
 export default function CheckoutPage() {
+  const router = useRouter();
+
   const { items } = useCartStore();
 
   const [form, setForm] = useState({
@@ -38,7 +41,9 @@ export default function CheckoutPage() {
       total,
     });
 
-    alert("Order placed successfully");
+    // alert("Order placed successfully");
+
+    router.push("/success");
   };
 
   return (
