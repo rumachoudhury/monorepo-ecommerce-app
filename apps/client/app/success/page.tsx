@@ -14,8 +14,17 @@ export default function SuccessPage() {
         <h1 className="text-2xl font-bold text-gray-800 mb-2">
           Order Successful
         </h1>
-        <p></p>
-        <Link href="/"></Link>
+        {/* Message */}
+        <p className="text-gray-500 mb-6">
+          Thank you for your purchase! Your order has been placed successfully.
+        </p>
+        {/* Button */}
+        <Link
+          href="/"
+          className="inline-block bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition"
+        >
+          Go Back Home
+        </Link>
       </div>
     </div>
   );
