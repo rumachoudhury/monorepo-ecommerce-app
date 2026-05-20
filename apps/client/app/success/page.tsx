@@ -2,6 +2,7 @@
 
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function SuccessPage() {
   return (
@@ -18,13 +19,23 @@ export default function SuccessPage() {
         <p className="text-gray-500 mb-6">
           Thank you for your purchase! Your order has been placed successfully.
         </p>
-        {/* Button */}
-        <Link
+
+        {/* Action Button */}
+        {/* <Link
           href="/"
           className="inline-block bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition"
         >
           Go Back Home
-        </Link>
+        </Link> */}
+
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link
+            href="/"
+            className="inline-block bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition"
+          >
+            Go Back Home
+          </Link>
+        </motion.div>
       </div>
     </div>
   );
