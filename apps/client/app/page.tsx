@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ShoppingBagIcon } from "lucide-react";
 
 import ProductCard from "./components/ProductCard";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -117,7 +118,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS SECTION */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
             😊 What Customers Say
@@ -139,6 +140,26 @@ export default function Home() {
               <h4 className="mt-4 font-bold">— Emma</h4>
             </div>
           </div>
+        </div>
+      </section> */}
+
+      <section>
+        <div className="bg-white rounded-3xl p-8 shadow-lg">
+          <p className="text-gray-500 leading-8 mb-8">
+            Shopping here was super easy and fast. I really loved the product
+            quality and delivery service.
+          </p>
+
+          <Image
+            src="/photo-1580489944761-15a19d654956.avif"
+            alt="Customer"
+            width={100}
+            height={100}
+            className="rounded-full object-cover mb-6"
+          />
+
+          <h3 className="text-2xl font-bold">Sarah Johnson</h3>
+          <p className="text-gray-500">Customer</p>
         </div>
       </section>
 
