@@ -42,10 +42,11 @@ import Link from "next/link";
 export default function About() {
   return (
     <div
-      className="relative min-h-screen bg-cover bg-center flex items-center justify-center px-4"
+      className="relative py-32 bg-cover bg-center flex items-center justify-center px-4"
       style={{
         backgroundImage:
           "url('/premium_photo-1675431443027-ad1f46c93c8d.avif')",
+        // "url('/photo-1492707892479-7bc8d5a4ee93.avif')",
       }}
     >
       {/* Overlay */}

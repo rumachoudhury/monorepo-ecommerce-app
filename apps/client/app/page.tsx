@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ShoppingBagIcon, ShoppingCartIcon } from "lucide-react";
+import { ShoppingBagIcon } from "lucide-react";
 
 import ProductCard from "./components/ProductCard";
 
@@ -28,7 +28,7 @@ export default function Home() {
       {/* FEATURED PRODUCTS */}
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="flex items-center gap-3 mb-10">
-          <ShoppingCartIcon className="text-cyan-700" />
+          {/* <ShoppingCartIcon className="text-cyan-700" /> */}
 
           <h2 className="text-3xl font-bold">Featured Products</h2>
         </div>

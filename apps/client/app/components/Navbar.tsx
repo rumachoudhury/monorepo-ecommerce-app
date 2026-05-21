@@ -11,7 +11,7 @@ export default function Navbar() {
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <nav className="flex justify-between items-center p-2 bg-black">
+    <nav className="flex justify-around items-center p-2 bg-black">
       <h1 className="font-bold text-xl">
         <Link href="/">
           <Image
