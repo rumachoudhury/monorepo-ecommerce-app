@@ -118,48 +118,49 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS SECTION */}
-      {/* <section className="py-20 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
             😊 What Customers Say
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8  border-b-cyan-400">
             <div className="p-6 shadow rounded-2xl">
+              <Image
+                src="/photo-1580489944761-15a19d654956.avif"
+                alt="Customer"
+                width={100}
+                height={100}
+                className="rounded-full object-cover mb-6"
+              />
               <p>&quot;Amazing products and fast shipping!&quot;</p>
               <h4 className="mt-4 font-bold">— Sarah</h4>
             </div>
 
             <div className="p-6 shadow rounded-2xl">
+              <Image
+                src="/photo-1539571696357-5a69c17a67c6.avif"
+                alt="Customer"
+                width={100}
+                height={100}
+                className="rounded-full object-cover mb-6"
+              />
               <p>&quot;Best ecommerce experience I&apos;ve had.&quot;</p>
               <h4 className="mt-4 font-bold">— John</h4>
             </div>
 
             <div className="p-6 shadow rounded-2xl">
+              <Image
+                src="/photo-1546961329-78bef0414d7c.avif"
+                alt="Customer"
+                width={100}
+                height={100}
+                className="rounded-full object-cover mb-6"
+              />
               <p>&quot;Great quality and customer service.&quot;</p>
               <h4 className="mt-4 font-bold">— Emma</h4>
             </div>
           </div>
-        </div>
-      </section> */}
-
-      <section>
-        <div className="bg-white rounded-3xl p-8 shadow-lg">
-          <p className="text-gray-500 leading-8 mb-8">
-            Shopping here was super easy and fast. I really loved the product
-            quality and delivery service.
-          </p>
-
-          <Image
-            src="/photo-1580489944761-15a19d654956.avif"
-            alt="Customer"
-            width={100}
-            height={100}
-            className="rounded-full object-cover mb-6"
-          />
-
-          <h3 className="text-2xl font-bold">Sarah Johnson</h3>
-          <p className="text-gray-500">Customer</p>
         </div>
       </section>
 
