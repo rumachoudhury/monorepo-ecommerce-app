@@ -120,7 +120,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
-            What Customers Say
+            😊 What Customers Say
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -143,7 +143,7 @@ export default function Home() {
       </section>
 
       {/* NEWSLETTER SECTION */}
-      <section className="py-20 bg-gray-900 text-white text-center">
+      <section className="py-20  text-white text-center">
         <h2 className="text-4xl font-bold">Join Our Newsletter</h2>
 
         <p className="mt-4 text-gray-300">
