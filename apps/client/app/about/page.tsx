@@ -42,7 +42,8 @@ import Link from "next/link";
 export default function About() {
   return (
     <div
-      className="relative py-32 bg-cover bg-center flex items-center justify-center px-4"
+      // className="relative py-32 bg-cover bg-center flex items-center justify-center px-4"
+      className="relative min-h-[70vh] bg-cover bg-center flex items-center justify-center px-4"
       style={{
         backgroundImage:
           "url('/premium_photo-1675431443027-ad1f46c93c8d.avif')",

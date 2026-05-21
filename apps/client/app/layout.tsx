@@ -30,9 +30,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       data-arp=""
     >
-      <body className="min-h-full flex flex-col">
-        <Navbar></Navbar>
-        {children}
+      <body className="min-h-screen flex flex-col">
+        <Navbar />
+
+        <main className="flex-1">{children}</main>
+
         <Footer />
       </body>
     </html>
