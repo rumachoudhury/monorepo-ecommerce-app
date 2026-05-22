@@ -165,10 +165,10 @@ export default function Home() {
       </section>
 
       {/* NEWSLETTER SECTION */}
-      <section className="py-20  text-white text-center">
+      <section className="py-20   text-center">
         <h2 className="text-4xl font-bold">Join Our Newsletter</h2>
 
-        <p className="mt-4 text-gray-300">
+        <p className="mt-4 text-gray-500">
           Get updates about new products and special offers.
         </p>
 

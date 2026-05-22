@@ -6,13 +6,20 @@ export default function Footer() {
     <footer className="bg-black text-white ">
       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10">
         {/* Logo + About */}
-        <div>
-          <div className="flex items-center gap-3 mb-4">
-            <Image src="/logo.png" alt="Shop Logo" width={50} height={50} />
-            <h2 className="text-xl font-bold">ShopEase</h2>
+        <div className="">
+          <div className="flex items-center gap-4">
+            <Image
+              src="/logo.png"
+              alt="Shop Logo"
+              width={90}
+              height={90}
+              className="object-contain"
+            />
+
+            <h2 className="text-3xl font-bold text-white">ShopEase</h2>
           </div>
 
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-sm leading-7 max-w-md">
             A modern ecommerce platform built for smooth shopping experience,
             fast delivery, and quality products.
           </p>
