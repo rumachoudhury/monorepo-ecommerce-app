@@ -14,6 +14,7 @@ type CartStore = {
   removeFromCart: (id: string) => void;
   increaseQty: (id: string) => void;
   decreaseQty: (id: string) => void;
+  clearCart: () => void; // New method to clear the cart
 };
 
 export const useCartStore = create<CartStore>()(
@@ -55,6 +56,11 @@ export const useCartStore = create<CartStore>()(
           items: state.items
             .map((i) => (i.id === id ? { ...i, quantity: i.quantity - 1 } : i))
             .filter((i) => i.quantity > 0),
+        })),
+
+      clearCart: () =>
+        set(() => ({
+          items: [],
         })),
     }),
     {

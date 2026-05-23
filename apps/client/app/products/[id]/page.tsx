@@ -49,7 +49,7 @@ export default function ProductPage() {
           onClick={() => addToCart(product)}
           className="bg-cyan-900 text-white px-8 py-4 rounded-xl hover:bg-cyan-700 transition"
         >
-          Add to Cart 🛒
+          Add to Cart
         </button>
       </div>
     </div>
