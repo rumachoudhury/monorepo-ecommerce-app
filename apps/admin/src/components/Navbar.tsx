@@ -2,6 +2,7 @@
 
 import { SearchIcon, User } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -15,13 +16,15 @@ export default function Navbar() {
     <div className="w-full h-20 bg-gray-900 text-white flex items-center justify-between mx-auto p-4">
       {/* LOGO */}
       <div className="flex items-center gap-2">
-        <Image
-          src="/growtika-mlpsHpUUCHY-unsplash.jpg"
-          alt="Logo"
-          width={90}
-          height={60}
-          className="object-cover rounded-l-md rounded-r-sm "
-        />
+        <Link href="/">
+          <Image
+            src="/growtika-mlpsHpUUCHY-unsplash.jpg"
+            alt="Logo"
+            width={90}
+            height={60}
+            className="object-cover rounded-l-md rounded-r-sm "
+          />
+        </Link>
       </div>
       <div className="flex items-center w-96 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2">
         <SearchIcon
