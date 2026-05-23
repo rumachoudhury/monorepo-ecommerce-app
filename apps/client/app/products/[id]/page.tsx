@@ -36,7 +36,7 @@ export default function ProductPage() {
       </div>
 
       {/* INFO */}
-      <div className="space-y-5">
+      {/* <div className="space-y-5">
         <h1 className="text-4xl font-bold">{product.title}</h1>
 
         <p className="text-gray-500 text-lg">
@@ -48,6 +48,48 @@ export default function ProductPage() {
         <button
           onClick={() => addToCart(product)}
           className="bg-cyan-900 text-white px-8 py-4 rounded-xl hover:bg-cyan-700 transition"
+        >
+          Add to Cart
+        </button>
+      </div> */}
+
+      <div className="space-y-5">
+        <h1 className="text-4xl font-bold">{product.title}</h1>
+
+        <p className="text-gray-500 text-lg">
+          Premium quality product for everyday use.
+        </p>
+
+        {/* PRICE SECTION (ADDED) */}
+        <div className="space-y-1">
+          <p className="text-green-600 text-3xl font-bold">
+            Now ${product.price}
+          </p>
+
+          <p className="text-gray-400 line-through text-lg">
+            Was ${product.price + 35}
+          </p>
+
+          <p className="text-red-500">You save $35.00</p>
+
+          <p className="text-sm text-gray-500">Price when purchased online</p>
+        </div>
+
+        {/* CASHBACK */}
+        <p className="text-sm text-gray-500">
+          Earn up to 5% cash back with OnePay CashRewards.{" "}
+          <span className="text-blue-600 underline cursor-pointer">
+            Learn how
+          </span>
+        </p>
+
+        {/* PRICE (optional original simple price) */}
+        <p className="text-3xl font-bold text-cyan-800">${product.price}</p>
+
+        {/* BUTTON */}
+        <button
+          onClick={() => addToCart(product)}
+          className="bg-cyan-900 text-white px-8 py-4 rounded-xl hover:bg-cyan-700 transition cursor-pointer"
         >
           Add to Cart
         </button>

@@ -6,17 +6,33 @@ import { motion } from "framer-motion";
 
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import { useCartStore } from "@/app/store/cartStore";
 
 export default function SuccessPage() {
+  const clearCart = useCartStore((state) => state.clearCart);
+
   const router = useRouter();
 
+  // useEffect(() => {
+  //   clearCart();
+
+  //   const timer = setTimeout(() => {
+  //     router.push("/");
+  //   }, 3000);
+
+  //   return () => clearTimeout(timer);
+  // }, [router, clearCart]);
+
   useEffect(() => {
-    // Clear cart and redirect after 3 seconds
+    clearCart();
+
     const timer = setTimeout(() => {
       router.push("/");
     }, 3000);
+
     return () => clearTimeout(timer);
-  }, [router]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">

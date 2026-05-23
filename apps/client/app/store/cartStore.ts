@@ -58,10 +58,10 @@ export const useCartStore = create<CartStore>()(
             .filter((i) => i.quantity > 0),
         })),
 
-      clearCart: () =>
-        set(() => ({
-          items: [],
-        })),
+      clearCart: () => {
+        set({ items: [] });
+        localStorage.removeItem("cart-storage");
+      },
     }),
     {
       name: "cart-storage",
