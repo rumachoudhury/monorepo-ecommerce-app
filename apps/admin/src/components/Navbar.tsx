@@ -20,7 +20,7 @@ export default function Navbar() {
           alt="Logo"
           width={90}
           height={60}
-          className="object-cover "
+          className="object-cover rounded-l-md "
         />
       </div>
       <div className="flex items-center w-96 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2">
