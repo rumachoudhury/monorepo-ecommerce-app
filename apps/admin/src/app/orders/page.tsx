@@ -6,9 +6,17 @@ export default function OrdersPage() {
     <main className="p-8 bg-gray-100 min-h-screen">
       {/* header */}
       <div className="flex items-center justify-between mb-8">
-        <Link
+        {/* <Link
           href="/"
           className=" text-green-500 text-2xl flex items-center gap-2"
+        >
+          <ArrowLeft />
+          Go to admin home
+        </Link> */}
+
+        <Link
+          href="/"
+          className="text-green-500 text-sm flex items-center gap-2 mb-4 border border-green-500 w-max px-3 py-1 rounded hover:bg-green-50 transition"
         >
           <ArrowLeft />
           Go to admin home
