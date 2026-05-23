@@ -15,7 +15,7 @@ function DashboardPage() {
         {pathname !== "/" && (
           <Link
             href="/"
-            className="text-green-500 text-2xl flex items-center gap-2 mb-4"
+            className="text-green-500 text-sm flex items-center gap-2 mb-4 border border-green-500 w-max px-3 py-1 rounded hover:bg-green-50 transition"
           >
             <ArrowLeft />
             Go to admin home
