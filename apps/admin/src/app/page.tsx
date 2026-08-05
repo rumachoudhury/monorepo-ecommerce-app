@@ -51,7 +51,12 @@ export default function AdminHome() {
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ chatInput: currentInput }),
+          // body: JSON.stringify({ chatInput: currentInput }),
+          body: JSON.stringify({
+            action: "sendMessage",
+            sessionId: crypto.randomUUID(),
+            chatInput: currentInput,
+          }),
         },
       );
 
