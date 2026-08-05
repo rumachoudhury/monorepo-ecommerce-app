@@ -64,7 +64,7 @@ Features:
 
 ### AI Assistant
 
-![AI Assistant](./screenshots/ai-assistant.png)
+<img src="./screenshots/ai-assistant.png" alt="AI Assistant" width="700"/>
 
 ---
 
