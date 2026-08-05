@@ -64,7 +64,7 @@ Features:
 
 ### AI Assistant
 
-<img src="./screenshots/ai-assistant.png" alt="AI Assistant" width="400" Height:"300" />
+<img src="./screenshots/ai-assistant.png" alt="AI Assistant" width="400" height="300" />
 
 ---
 
