@@ -1,31 +1,3 @@
-// import React from "react";
-// import DashboardPage from "./dashboard/page";
-// import Sidebar from "@/components/Sidebar";
-
-// export default function AdminHome() {
-//   return (
-//     <div className="flex min-h-screen bg-gray-200 relative">
-//       {/* Sidebar */}
-//       <Sidebar />
-
-//       {/* Main Content */}
-//       <div className="flex-1 p-6">
-//         <DashboardPage />
-//       </div>
-
-//       {/* Chat Button */}
-//       <a
-//         href="http://localhost:5678/webhook/1478c2c2-be0c-4836-8b51-2db2d867bf56/chat"
-//         target="_blank"
-//         className="fixed bottom-6 right-6 bg-blue-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-blue-700"
-//       >
-//         💬 Chat Assistant
-//       </a>
-//     </div>
-//   );
-// }
-
-// -----------------------
 "use client";
 
 import React, { useState } from "react";
@@ -73,7 +45,8 @@ export default function AdminHome() {
 
     try {
       const res = await fetch(
-        "http://localhost:5678/webhook/1478c2c2-be0c-4836-8b51-2db2d867bf56/chat",
+        // "http://localhost:5678/webhook/1478c2c2-be0c-4836-8b51-2db2d867bf56/chat",
+        "https://YOUR-NGROK-URL.ngrok-free.app/webhook/1478c2c2-be0c-4836-8b51-2db2d867bf56/chat",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
