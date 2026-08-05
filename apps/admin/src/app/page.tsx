@@ -44,21 +44,16 @@ export default function AdminHome() {
     setLoading(true);
 
     try {
-      const res = await fetch(
-        // "http://localhost:5678/webhook/1478c2c2-be0c-4836-8b51-2db2d867bf56/chat",
-
-        "https://freebee-graph-starry.ngrok-free.dev/webhook/1478c2c2-be0c-4836-8b51-2db2d867bf56/chat",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          // body: JSON.stringify({ chatInput: currentInput }),
-          body: JSON.stringify({
-            action: "sendMessage",
-            sessionId: crypto.randomUUID(),
-            chatInput: currentInput,
-          }),
-        },
-      );
+      const res = await fetch(process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL!, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        // body: JSON.stringify({ chatInput: currentInput }),
+        body: JSON.stringify({
+          action: "sendMessage",
+          sessionId: crypto.randomUUID(),
+          chatInput: currentInput,
+        }),
+      });
 
       const raw = await res.text();
       console.log("RAW RESPONSE FROM N8N:", raw);
