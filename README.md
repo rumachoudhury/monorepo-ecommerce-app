@@ -20,6 +20,7 @@ https://monorepo-ecommerce-app-admin.vercel.app
 - Tailwind CSS
 - Zustand
 - Framer Motion
+- n8n AI Workflow
 - Vercel
 
 ---
@@ -43,6 +44,27 @@ Features:
 - Sidebar navigation
 - Product management UI
 - Responsive admin panel
+- AI Assistant chatbot integration
+
+---
+
+## AI Assistant
+
+AI-powered chatbot integrated into the Admin Dashboard using n8n workflow automation.
+
+Features:
+- Real-time chat interaction
+- AI-generated responses
+- Webhook-based communication
+- Ecommerce assistant functionality
+
+---
+
+## Screenshots
+
+### AI Assistant
+
+![AI Assistant](./screenshots/ai-assistant.png)
 
 ---
 
