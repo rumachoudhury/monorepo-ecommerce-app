@@ -46,7 +46,8 @@ export default function AdminHome() {
     try {
       const res = await fetch(
         // "http://localhost:5678/webhook/1478c2c2-be0c-4836-8b51-2db2d867bf56/chat",
-        "https://YOUR-NGROK-URL.ngrok-free.app/webhook/1478c2c2-be0c-4836-8b51-2db2d867bf56/chat",
+
+        "https://freebee-graph-starry.ngrok-free.dev/webhook/1478c2c2-be0c-4836-8b51-2db2d867bf56/chat",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
